@@ -67,7 +67,6 @@ function Menu() {
     text('spherix', w / 2, h / 4)
     textSize(10)
     //devmode
-    text("(this won't be in actual game)press number keys to set level", w / 2, 7 * h / 8)
     textSize(15)
     if (Number.isInteger(this.hardcoremode / 2)) {
       this.hardcorestatus = "off"
@@ -807,7 +806,6 @@ var tp = new Player(w / 4, 0.3 * h)
 var tutorial = new tutorialmenu()
 var pa = new Button("play again", w / 3 - w / 12, 2 * h / 3, w / 6, h / 10, 20, false, false)
 var lvl = new Button("back to menu", 2 * w / 3- w / 12, 2 * h / 3, w / 6, h / 10, 20, false, false)
-var nl = new Button("next level", w / 3 - w / 16, 2 * h / 3, w / 8, h / 10, 20, false, false)
 var play = new Button("play", w / 2 - (w / 12), h / 2 - h / 20, w / 6, h / 10, 30, false, false)
 var lvl2 = new Button("hardcore mode:", w / 2 - w / 16, 2 * h / 3, w / 8, h / 10, 15, false, false)
 var pausemenu = new Button("", 0, 0, w / 32, w / 32, 8, false, false)
@@ -842,7 +840,6 @@ var opps = []
 var movements = [-1, 0, 1]
 var midLine = new midL()
 var rm = new restartMenu();
-var levelMenu = new levelmenu()
 var wm = new winMenu()
 var circConst = new Circular()
 var midlines = new Midlines()
