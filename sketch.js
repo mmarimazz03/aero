@@ -456,9 +456,7 @@ function mouseClicked() {
       }else if(sfxmutebutton.mouseIsOn){
          mn.sfxmuted++
          buttonclick.play()
-      }else if(levelSelectorButton.mouseIsOn){
-         mn.menustatus = 7 
-        buttonclick.play()
+      
       }
       break;
     case 1:
