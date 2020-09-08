@@ -95,8 +95,6 @@ function Menu() {
     mutebutton.update(1)
     sfxmutebutton.show()
     sfxmutebutton.update(1)
-    levelSelectorButton.show()
-    levelSelectorButton.update(1)
     textSize(10)
     if (mouseX > lvl2.left && mouseX < lvl2.right && mouseY > lvl2.upper && mouseY < lvl2.lower) {
       fill(this.fade1)
@@ -740,14 +738,7 @@ function levelmenu(){
       textSize(30)
       textAlign(CENTER)
       strokeWeight(0)
-      text("select a level:", w / 2, h / 3)
-     for(let i = 0; i < levelButtons.length; i++){
-        levelButtons[i].show()
-        levelButtons[i].update(4)
-       levelSelectorBTM.show()
-       levelSelectorBTM.update(4)
-       if(!mn.unlockedLevels[i]){
-         image(lock, 53.3333 * w / 800 + i * (w / 11.3) + (w / 45.2) , 0.7 * h, w / 40, w / 40)
+      
            
        }
      }
@@ -801,7 +792,6 @@ function tutorialmenu() {
     textSize(15)
     textFont(goodfont)
     textAlign(CENTER, CENTER)
-    text("Select your color:", w / 2, h / 4)
     
     backtomenu.show()
     backtomenu.update(10)
@@ -823,12 +813,9 @@ var lvl2 = new Button("hardcore mode:", w / 2 - w / 16, 2 * h / 3, w / 8, h / 10
 var pausemenu = new Button("", 0, 0, w / 32, w / 32, 8, false, false)
 var pmp = new Button("resume", w / 4, h / 2, w / 8, h / 10, 20, false, false)
 var pbm = new Button("back to menu", 5 * w / 8, h / 2, w / 8, h / 10, 15, false, false)
-var ttl = new Button("select your color", 0.75 * w - w / 16, 2 * h / 3, w / 8, h / 10, 20, false, false)
 var backtomenu = new Button("back to menu", (w / 2) - (w / 16), 0.8 * h, w / 8, w / 16, 12, false, false)
 var mutebutton = new Button("music volume: ", 53.3333 * w / 800, 2 * h / 18.75, w / 10, h / 15, 11, true, true)
 var sfxmutebutton = new Button("sfx volume: ", w - ((w / 10) + (53.3333 * w / 800)), 2 * h / 18.75, w / 10, h / 15, 11, true, true)
-var levelSelectorButton = new Button("select a level", w / 4 - w / 12 , 2 * h / 3, w / 6,  h / 10, 15, false, false)
-var levelSelectorBTM = new Button("back to menu", w / 2 - w / 16, h / 2, w / 8, h / 10, 20, false, false) 
 
 
 var levelButtons = []
