@@ -25,49 +25,13 @@ function game() {
     }
     if (frameCount < mn.levelintros[0] + 180 && mn.levelattempted[0] != true && mn.hardcorestatus === "off"&& !mn.devmode) {
       frameRect()
-      text("Alright, first level. This should be easy.", w / 2, h / 3)
+      text("Eliminate enemy fighters.", w / 2, h / 3)
       
-      projectiles = []
-    } else if (frameCount < mn.levelintros[1] + 180 && mn.levelattempted[1] != true && mn.hardcorestatus === "off"&& !mn.devmode) {
-      frameRect()
-      text("Good job. Let's spice things up a bit.", w / 2, h / 3)
-      projectiles = []
-    } else if (frameCount < mn.levelintros[2] + 180 && mn.levelattempted[2] != true && mn.hardcorestatus === "off"&& !mn.devmode) {
-      frameRect()
-      text("Now that you're getting a hang of it, let's throw another enemy in there.", w / 2, h / 3)
-      projectiles = []
-    } else if (frameCount < mn.levelintros[3] + 180 && mn.levelattempted[3] != true && mn.hardcorestatus === "off"&& !mn.devmode) {
-      frameRect()
-      text("Let's switch things up a bit here. Free for all.", w / 2, h / 3)
+ 
       projectiles = []
     } else if (frameCount < mn.levelintros[4] + 180 && mn.levelattempted[4] != true && mn.hardcorestatus === "off"&& !mn.devmode) {
       frameRect()
-      text("Be careful this round. You might get swept away...", w / 2, h / 3)
-      projectiles = []
-    } else if (frameCount < mn.levelintros[5] + 180 && mn.levelattempted[5] != true && mn.hardcorestatus === "off"&& !mn.devmode) {
-      frameRect()
-      text("Are you afraid of Santa Claus?", w / 2, h / 3)
-      projectiles = []
-    } else if (frameCount < mn.levelintros[6] + 180 && mn.levelattempted[6] != true && mn.hardcorestatus === "off"&& !mn.devmode) {
-      frameRect()
-      text("Portals.", w / 2, h / 3)
-      projectiles = []
-    } else if (frameCount < mn.levelintros[7] + 180 && mn.levelattempted[7] != true && mn.hardcorestatus === "off"&& !mn.devmode) {
-      frameRect()
-      text("One more enemy this time.", w / 2, h / 3)
-      projectiles = []
-    } else if (frameCount < mn.levelintros[8] + 180 && mn.levelattempted[8] != true && mn.hardcorestatus === "off"&& !mn.devmode) {
-      frameRect()
-      text("More portals.", w / 2, h / 3)
-      projectiles = []
-    } else if (frameCount < mn.levelintros[9] + 180 && mn.levelattempted[9] != true && mn.hardcorestatus === "off"&& !mn.devmode) {
-      frameRect()
-      text("Alright, final level.", w / 2, h / 3)
-      projectiles = []
-    } else if (frameCount < mn.levelintros[10] + 180 && mn.levelattempted[10] != true && mn.hardcorestatus === "off"&& !mn.devmode) {
-      frameRect()
-      text("<leveltext>", w / 2, h / 3)
-      projectiles = []
+      
     } else {
       mn.ingamestatus = true
       var startingColorBool = frameCount < p.upd + 5
